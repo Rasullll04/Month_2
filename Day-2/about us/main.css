@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #F2F2F2;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+}
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 56px;
+}
+.header__item{
+    margin-left: 670px;
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+    gap: 33px;
+}
+.header__list{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 330px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F
+}
+.intro{
+    background-image: url(./image/Group\ 7.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 150px;
+}
+.intro__title{
+    padding-top: 140px;
+    padding-left: 85px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    width: 493px;
+    line-height: 72px;
+    color: #FEFCF7
+}
+.intro__text{
+    width: 493px;
+    padding-left: 85px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px; 
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.middle{
+    display: flex;
+    margin-bottom: 244px;
+}
+.middle__left{
+    width: 345px;
+    height: 420px;
+    border-radius: 100px;
+    margin-left: 100px;
+}
+.middle__right{
+    position: absolute;
+    left: 51%;
+}
+.middle__title{
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333D4B;
+}
+.middle__text{
+    width: 500px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}.box{
+    margin-top: 400px;
+    display: flex;
+    background: #2C343E;
+    border-radius: 10px;
+    height: 474px;
+    margin-bottom: 150px;
+}
+.box__right{
+    position: absolute;
+    left: 57%;
+    top: 1585px;
+
+}
+.box__left{
+    position:relative;
+    width: 512px;
+    height: 767px;
+    padding-left: 85px;
+    padding-top: 40px;
+}
+
+.box__title{
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+}
+.box__text{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.card{
+    margin-bottom: 165px;
+}
+.card__h1{
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    padding-left: 85px;
+    padding-bottom: 52px;
+}
+.card__list{
+    margin-left: 85px;
+    gap: 200px;
+    list-style-type: none;
+    display: flex;
+}
+.card__title{
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+}
+.card__text{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px; 
+    color: #333D4B;
+}
+.footer{
+    display: flex;
+    padding: 40px 47px;
+    background: #2C343E;
+    margin-bottom: 100px;
+}
+.footer__left{
+    display: flex;
+}
+.footer__list{
+    align-items: center;
+    gap: 30px;
+    padding-left: 100px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__item{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase; 
+    color: #83888F;
+}
+.footer__right{
+    padding-left: 370px;
+    display: flex;
+    gap: 25px;
+}

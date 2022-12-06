@@ -1,9 +1,11 @@
 *{
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 body{
     background-color:#FEFCF7; 
+    scroll-behavior: smooth;
 }
 .container{
     width: 1200px;
@@ -289,4 +291,3 @@ body{
     display: flex;
     gap: 25px;
 }
-
