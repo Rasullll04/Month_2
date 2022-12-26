@@ -12,10 +12,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./narmalize.css">
-
     <title>Document</title>
 </head>
 <body>
+    <input name="modal" id="check" type="radio">
+    <input name="modal" id="check2" type="radio">
+    
+    <label for="check"> </label>
+    <div class="modal">
+        <div class="modal__card">
+            <div class="modal__header">
+                <h4 class="modal__title">Order Summary</h4>
+            </div>
+            <div class="modal__body">
+                <p class="modal__pr">“I drink my coffee as Filter, with a Decaf
+                 type of bean. 250g ground ala Cafetiére, sent to me Every Week.”
+                </p>
+                <p class="modal__text">Is this correct? You can proceed to checkout or go back to plan 
+                 selection if something is off. Subscription discount codes can also be redeemed at the checkout.
+                </p>
+                <label for="check2"> 
+                    <a class="button">Checkout</a>
+                </label>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <header class="header">
             <nav class="header__navbar"> 
@@ -24,6 +45,9 @@
                 <li> <a class="header__list link" href="../day-2.html">Home</a></li>
                 <li> <a class="header__list link" href="../about us/idex.html">ABOUT US</a> </li>
                 <li class="header__list"> create your plan</li>
+                <label for="check"> 
+                    <li><a class="button">Check</a></li>  
+                </label>
             </ul>
             </nav>
         </header>
@@ -140,7 +164,7 @@
                     </li>
                 </ul>
                 <img class="image" src="./image/Group 24.png" alt="">
-                <a class="button" href="#">Create my plan!</a>
+                <a class="button btn" href="#">Create my plan!</a>
             </div>
         </div>
     </section>

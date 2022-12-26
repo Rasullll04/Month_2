@@ -1,4 +1,10 @@
-/* *{
+@import './mixin';
+@import './variables';
+
+
+
+
+*{
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
@@ -31,9 +37,7 @@ body{
     display: flex;
     justify-content: space-between;
     gap: 330px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 700;
+    @extend %font700;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.923077px;
@@ -44,7 +48,7 @@ body{
     color: black;
 }
 .intro{
-    background-image: url(./image/Bitmap.png);
+    background-image: url(/image/Bitmap.png);
     height: 550px;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -53,23 +57,19 @@ body{
 .intro__title{
     padding-top: 117px;
     padding-left: 85px;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
+    @extend %font900;
     font-size: 72px;
     width: 493px;
     line-height: 72px;
-    color: #FEFCF7
+    color:$color;
 }
 .intro__text{
     width: 493px;
     padding-left: 85px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
+    @extend %font400;
     font-size: 16px;
     line-height: 26px; 
-    color: #FEFCF7;
+    color:$color;
     mix-blend-mode: normal;
     opacity: 0.8;
 }
@@ -78,14 +78,12 @@ body{
     margin-left: 85px;
     padding: 10px;
     border-radius: 6px;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
+    @extend %font900;
     font-size: 18px;
     line-height: 25px;
     text-align: center;  
     background-color: #065450cf;
-    color: #FEFCF7;
+    color:$color;
 }
 .button:active{
     background-color: #66D2CF;
@@ -123,9 +121,7 @@ body{
 }
 .collection__title{
     margin-top: 71px;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
+    @extend %font900;
     font-size: 24px;
     line-height: 32px;
     text-align: center;  
@@ -134,9 +130,7 @@ body{
 .collection__text{
     margin-top: 24px;
     width:255px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
+    @extend %font400;
     font-size: 16px;
     line-height: 26px;
     text-align: center;    
@@ -154,25 +148,21 @@ body{
 .middle__title{
     padding-top: 60px;
     padding-bottom: 20px;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
+    @extend %font900;
     font-size: 40px;
     line-height: 48px;
     text-align: center;  
-    color: #FEFCF7;
+    color:$color;
 }
 .middle__text{
     padding-bottom: 300px;
     padding-left: 400px;
     width: 400px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
+    @extend %font400;
     font-size: 16px;
     line-height: 26px;
     text-align: center;    
-    color: #FEFCF7;   
+    color:$color;
     mix-blend-mode: normal;
     opacity: 0.8;
 }
@@ -196,23 +186,19 @@ body{
     margin-left: 110px;
 }
 .middle__h1{
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
+    @extend %font900;
     font-size: 24px;
     line-height: 32px;
     text-align: center;   
-    color: #FEFCF7;
+    color:$color;
 }
 .middle__p{
     padding:50px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
+    @extend %font400;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    color: #FEFCF7;
+    color:$color;
 }
 .work{
     margin-top: 400px;
@@ -225,9 +211,7 @@ body{
     margin-bottom: 67px;
 }
 .work__title{
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
+    @extend %font900;
     font-size: 24px;
     line-height: 32px;
     color: #83888F;
@@ -249,9 +233,7 @@ body{
     width: 355px;
 }
 .work__h1{
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
+    @extend %font900;
     width: 200px;
     font-size: 44px;
     line-height: 42px;
@@ -262,9 +244,7 @@ body{
 }
 .work__p{
     width: 285px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
+    @extend %font400;
     font-size: 16px;
     line-height: 26px;
     color: #333D4B;
@@ -296,9 +276,7 @@ body{
     justify-content: space-between;
 }
 .footer__item{
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 700;
+    @extend %font700;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.923077px;
@@ -311,9 +289,7 @@ body{
     gap: 25px;
 }
 .link__1{
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 700;
+    @extend %font700;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.923077px;
@@ -323,4 +299,4 @@ body{
 }
 .link__1:active{
     color: white;
-} */
+}
